@@ -1,6 +1,5 @@
-package com.ello.entry;
+package com.ello.entity;
 
-import com.ello.Imp.ElectricEngine;
 import com.ello.inter.Engine;
 
 public class Car {

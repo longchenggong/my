@@ -1,7 +1,6 @@
-package com.ello.entry;
+package com.ello.entity;
 
 import com.ello.Imp.CombustionEngine;
-import com.ello.inter.Engine;
 
 public class CombustionCar extends Car{
     public CombustionCar() {
