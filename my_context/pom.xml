@@ -8,14 +8,19 @@
   <artifactId>my_context</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
+  <parent>
+    <artifactId>my</artifactId>
+    <groupId>com.ello</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
 
   <dependencies>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -23,5 +28,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
 
 </project>
