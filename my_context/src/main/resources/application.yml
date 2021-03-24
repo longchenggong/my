@@ -1,8 +1,6 @@
 server:
   port: 8081
-
 debug: true
-
 pet:
   name: "张三"
   weight: 20
@@ -13,3 +11,9 @@ pet:
     - nu
   cat:
     name: "c"
+
+
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
