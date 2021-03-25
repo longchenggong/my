@@ -1,0 +1,19 @@
+server:
+  port: 8081
+debug: true
+pet:
+  name: "张三"
+  weight: 20
+  map: {"a":22,"b":"sdf"}
+  list:
+    - 1
+    - sf
+    - nu
+  cat:
+    name: "c"
+
+
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
