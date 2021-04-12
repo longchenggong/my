@@ -1,6 +1,7 @@
 package com.ello.entity;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnResource;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -21,7 +22,13 @@ import java.util.Map;
 @ToString
 @Component
 @Primary
+@NoArgsConstructor
 public class Pet {
+
+    public Pet(String name, Integer weight) {
+        this.name = name;
+        this.weight = weight;
+    }
 
     private String name;
     private Integer weight;

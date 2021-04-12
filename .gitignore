@@ -1,3 +1,14 @@
 # Project exclude paths
 /my_common/target/
-/my_context/target/
+/my_web/target/
+# Maven #
+target/
+
+# IDEA #
+.idea/
+*.iml
+
+# Eclipse #
+.settings/
+.classpath
+.project

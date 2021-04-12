@@ -12,9 +12,11 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2021/3/1818:03
  */
 @Slf4j
-public class MyInterceptor implements HandlerInterceptor {
+public class CheckUserInterceptor implements HandlerInterceptor {
     @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) {
+
+        String requestURI = request.getRequestURI();
         log.info("path:"+ request.getRequestURI());
 
         return true;
