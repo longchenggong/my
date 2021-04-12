@@ -10,15 +10,15 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class PrintQueue {
 
-//    private final Lock lock=new ReentrantLock(false);
+    //    private final Lock lock=new ReentrantLock(false);
     private final Lock lock=new ReentrantLock(false);
 
     public void printJob(){
         lock.lock();
         try {
-        long duration= (long) (Math.random()*10000);
-        System.out.println("当前线程执行中："+Thread.currentThread().getName()+" sleep："+duration);
-        Thread.sleep(duration);
+            long duration= (long) (Math.random()*10000);
+            System.out.println("当前线程执行中："+Thread.currentThread().getName()+" sleep："+duration);
+            Thread.sleep(duration);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }finally {
