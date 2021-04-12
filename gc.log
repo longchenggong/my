@@ -1,0 +1,12 @@
+Java HotSpot(TM) 64-Bit Server VM (25.261-b12) for windows-amd64 JRE (1.8.0_261-b12), built on Jun 18 2020 06:56:32 by "" with unknown MS VC++:1916
+Memory: 4k page, physical 8291244k(1227696k free), swap 17335904k(2254300k free)
+CommandLine flags: -XX:InitialHeapSize=209715200 -XX:MaxHeapSize=209715200 -XX:MaxNewSize=104857600 -XX:MaxTenuringThreshold=15 -XX:NewSize=104857600 -XX:OldPLABSize=16 -XX:PretenureSizeThreshold=3145728 -XX:+PrintGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:SurvivorRatio=8 -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseConcMarkSweepGC -XX:-UseLargePagesIndividualAllocation -XX:+UseParNewGC 
+70.791: [Full GC (Heap Dump Initiated GC) 70.791: [CMS: 0K->1467K(102400K), 0.0077705 secs] 8194K->1467K(194560K), [Metaspace: 3848K->3848K(1056768K)], 0.0082192 secs] [Times: user=0.02 sys=0.00, real=0.01 secs] 
+Heap
+ par new generation   total 92160K, used 546K [0x00000000f3800000, 0x00000000f9c00000, 0x00000000f9c00000)
+  eden space 81920K,   0% used [0x00000000f3800000, 0x00000000f3888a00, 0x00000000f8800000)
+  from space 10240K,   0% used [0x00000000f8800000, 0x00000000f8800000, 0x00000000f9200000)
+  to   space 10240K,   0% used [0x00000000f9200000, 0x00000000f9200000, 0x00000000f9c00000)
+ concurrent mark-sweep generation total 102400K, used 1467K [0x00000000f9c00000, 0x0000000100000000, 0x0000000100000000)
+ Metaspace       used 3855K, capacity 4540K, committed 4864K, reserved 1056768K
+  class space    used 426K, capacity 428K, committed 512K, reserved 1048576K
