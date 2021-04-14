@@ -1,5 +1,14 @@
+com\ello\controller\LoginController.class
+com\ello\config\TestConfig.class
+com\ello\config\WebMVCConfig.class
 com\ello\controller\My.class
+com\ello\entity\Car.class
 com\ello\Imp\CombustionEngine.class
+com\ello\entity\Cat.class
+com\ello\entity\CombustionCar.class
+com\ello\config\interceptor\CheckUserInterceptor.class
+com\ello\base\LambdaTest.class
 com\ello\App.class
+com\ello\entity\Pet.class
 com\ello\inter\Engine.class
 com\ello\Imp\ElectricEngine.class
