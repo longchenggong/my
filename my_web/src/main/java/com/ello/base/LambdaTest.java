@@ -10,6 +10,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
 
 /**
@@ -35,7 +36,7 @@ public class LambdaTest {
 
                 List<Cat> cats = Arrays.asList(cat01, cat02, cat03, cat04);
 
-                List<String> collect = pets.stream().map(Pet::getName).distinct().collect(Collectors.toList());
+                List<String> collect = pets.stream().map(Pet::getName).distinct().collect(toList());
                 String s = pets.stream().map(Pet::getName).distinct().collect(Collectors.joining("$"));
                 System.out.println("joining:" + s);
 
@@ -55,7 +56,6 @@ public class LambdaTest {
         public void testMap(){
                 List<String> givenList = Arrays.asList("a", "bb", "c", "d", "bb");
 
-
-
         }
+
 }

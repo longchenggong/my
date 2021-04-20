@@ -22,6 +22,8 @@
 <!--        <maven.compiler.source>1.8</maven.compiler.source>-->
     </properties>
 
+
+
     <!--依赖版本定义 -->
     <dependencyManagement>
         <dependencies>
@@ -60,6 +62,7 @@
              <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                 <version>2.4.3</version>
                 <configuration>
                     <mainClass>com.ello.App</mainClass>
                 </configuration>
