@@ -1,0 +1,32 @@
+spring:
+  datasource:
+#    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://1.15.112.126:3306/my
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      filter: state,wall
+
+      stat-view-servlet:
+        enabled: true
+        login-username: admin
+        login-password: admin
+
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+
+  redis:
+#    redis://user:password@example.com:6379
+#    url: redis:@1.15.112.126:6379
+    host: 1.15.112.126
+    port: 6379
+    client-type: jedis
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-conf.xml  #全局配置文件位置
+  mapper-locations: classpath:mybatis/mapper/*.xml     #sql映射文件位置
+
+
